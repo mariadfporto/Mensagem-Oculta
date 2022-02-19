@@ -20,15 +20,25 @@
             <option value="base64">Base64</option>
         </select>
         </div>
-        <div><input type="radio" id="arroz" value="codificar" name="operacao" onclick="atualizarBotao(this.value)">Codificar </div>
-        <div> <input type="radio"  value="decodificar" name="operacao" onclick="atualizarBotao(this.value)">Decodificar</div>
+        <div class="radio">
+            <input type="radio" id="arroz" value="codificar" name="operacao" onclick="atualizarBotao(this.value)"> Codificar 
+        </div>
+        <div> 
+            <input type="radio"  value="decodificar" name="operacao" onclick="atualizarBotao(this.value)"> Decodificar
+        </div>
         <div id="boxIncremento" hidden>
             <label for="incremento">Incremento:</label>
             <input type="number" name="incremento" id="incremento">
         </div>
     </form>
     <button id="executar" onclick="cifrar()">Codificar</button>
-    <p id="resultado">Seu texto</p>
+    <div class="form-group resultado">
+        <label for="resultado" 
+        >Resultado:</label>
+        <textarea class="form-control w-50" id="resultado" rows="3"></textarea>
+      </div>
+          
+    
     <script src="codificacao.js"></script>
 </body>
 </html>
