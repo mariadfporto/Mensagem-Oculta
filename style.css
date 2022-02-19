@@ -1,6 +1,9 @@
-form{
+form, .title{
     margin: 2% 10% 0.5% ;
 }
+
+
+
 
 .radio{
     margin-top: 1%;
